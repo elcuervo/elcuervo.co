@@ -4,5 +4,12 @@ title: Migration to Github
 published: true
 ---
 
-![](http://mundoespejo.es/imgz/github.jpg)
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus vitae risus vitae lorem iaculis placerat. Aliquam sit amet felis. Etiam congue. Donec risus risus, pretium ac, tincidunt eu, tempor eu, quam. Morbi blandit mollis magna. Suspendisse eu tortor. Donec vitae felis nec ligula blandit rhoncus. Ut a pede ac neque mattis facilisis. Nulla nunc ipsum, sodales vitae, hendrerit non, imperdiet ac, ante. Morbi sit amet mi. Ut magna. Curabitur id est. Nulla velit. Sed consectetuer sodales justo. Aliquam dictum gravida libero. Sed eu turpis. Nunc id lorem. Aenean consequat tempor mi. Phasellus in neque. Nunc fermentum convallis ligula.
+![Github](http://mundoespejo.es/imgz/github.jpg)
+# Migration to Github
+So, after many years having (almost) a blog i've choosed the best way of having one, using the incredible [Github Pages](http://pages.github.com).
+
+I started the migration a few days ago and i found that for a developer like me having a git-powered blog is the only way to blog.
+
+Just using the http://github.com/{username}/{username}.github.com repo will give you the ability of using static pages or [Jekyll](http://jekyllrb.com), the best way of managing a blog.
+
+If you are curious about this blog, check it out here: [elcuervo.github.com](http://github.com/elcuervo/elcuervo.github.com)

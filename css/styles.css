@@ -2,10 +2,6 @@
 /* ! Layout for desktop version   */
 /* ============================== */
 
-a{
-  color: #808080
-}
-
 body {
   font-family: 'PT Sans', serif;
 }
@@ -20,6 +16,10 @@ ul li {
   float:left;
   padding: 25px;
   background: black;
+}
+
+ul li:hover{
+  background: #222
 }
 
 ul li a{
@@ -48,6 +48,16 @@ ul li a{
 }
 
 .posts{
+}
+
+.posts .post{
+  margin-right:4px;
+  border: 1px solid black;
+}
+
+.posts .post .title{
+  background: black;
+  color: white;
 }
 
 .logo{
