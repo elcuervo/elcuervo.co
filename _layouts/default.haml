@@ -16,11 +16,16 @@
         .twocol
         .eightcol
           .twelvecol.page
+            .logo
+              %a{href: "/"}
+                %img{src:"/images/crow.png"}
             .twelvecol.wrapper
               .menu.clear
                 %ul
-                  %li corax
-                  %li contact
+                  %li
+                    %a{href: "/rax"} corax
+                  %li
+                    %a{href: "/contact"} contact
               .content.twelvecol
                 .onecol
                 .tencol {{content}}
