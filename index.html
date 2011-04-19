@@ -1,1 +1,15 @@
-Test
+---
+layout: default
+---
+<div class='posts tencol'>
+  {% for post in site.posts %}
+  <div class='sixcol last'>
+    <!-- %span {{ post.date | date_to_string }} -->
+    <!-- %img{ src: '/images/posts/{{post.url | replace: "/","" | replace: ".html",""}}/thumb.png', alt: "{{ post.title }}" } -->
+    <a href='{{ post.url }}'>
+      <img alt='{{ post.title }}' src='http://placehold.it/400x400' />
+    </a>
+    <!-- %a{href: "{{ post.url }}"} {{ post.title }} -->
+  </div>
+  {% endfor %}
+</div>

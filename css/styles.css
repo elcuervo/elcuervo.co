@@ -1,0 +1,72 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+body {
+  font-family: 'PT Sans', serif;
+}
+
+ul{
+  list-style-type: none;
+  margin: auto;
+  height: 60px
+}
+
+ul li {
+  float:left;
+  padding: 10px
+}
+
+.clear{
+  clear:both;
+}
+
+.menu{
+  float:right
+}
+
+.page{
+  padding-top:20px;
+}
+
+.wrapper{
+  border:1px solid black
+}
+
+.content{
+  padding-bottom: 20px
+}
+
+.posts{
+}
+
+.footer{
+  background: black;
+  color: white;
+}
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+  body {
+
+  }
+
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}

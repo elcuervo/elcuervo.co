@@ -1,0 +1,50 @@
+!!! 5
+%html
+  %head
+    %title
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1.0"}
+    %link{rel: "stylesheet", href: "/css/1140.css", type: "text/css", media: "screen"}
+    %link{rel: "stylesheet", href: "/css/styles.css", type: "text/css", media: "screen"}
+    %link{rel: "stylesheet", href: "http://fonts.googleapis.com/css?family=PT Sans", type: "text/css", media: "screen"}
+    %script{type: "text/javascript", src: "/js/css3-mediaqueries.js"}
+    %script{type: "text/javascript", src: "http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js"}
+  %body
+    .container
+      .row
+        .twocol
+        .eightcol
+          .twelvecol.page
+            .twelvecol.wrapper
+              .menu.clear
+                %ul
+                  %li corax
+                  %li contact
+              .content.twelvecol
+                .onecol
+                {{content}}
+                .onecol
+              .footer.twelvecol.clear
+                #twitter.fivecol
+                .twocol
+                #github-badge.fivecol
+        .twocol
+
+    :javascript
+      GITHUB_USERNAME="elcuervo";
+      GITHUB_LIST_LENGTH=10;
+      GITHUB_HEAD="div"; // e.g. change to "h2" for wordpress sidebars
+      GITHUB_THEME="black"; // try 'black'
+      GITHUB_TITLE = "My projects";
+      GITHUB_SHOW_ALL = "Show all";
+
+      getTwitters('twitter', {
+        id: 'elcuervocorax',
+        count: 5,
+        enableLinks: true,
+        ignoreReplies: true,
+        clearContents: true,
+        template: '%text% <a href="http://twitter.com/%user_screen_name%/statuses/%id_str%/">%time%</a>'
+      });
+
+    %script{type: "text/javascript", src: "http://drnic.github.com/github-badges/dist/github-badge-launcher.js"}
+
