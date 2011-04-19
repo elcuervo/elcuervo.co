@@ -13,3 +13,12 @@ I started the migration a few days ago and i found that for a developer like me 
 Just using the http://github.com/{username}/{username}.github.com repo will give you the ability of using static pages or [Jekyll](http://jekyllrb.com), the best way of managing a blog.
 
 If you are curious about this blog, check it out here: [elcuervo.github.com](http://github.com/elcuervo/elcuervo.github.com)
+
+The most amazing thing is the compatibility with different programming languages out of the box
+
+``` ruby
+puts "Go ruby!"
+```
+``` python
+print("Go python!")
+```
