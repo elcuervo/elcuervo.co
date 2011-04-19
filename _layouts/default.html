@@ -8,6 +8,8 @@
     <link href='http://fonts.googleapis.com/css?family=PT Sans' media='screen' rel='stylesheet' type='text/css' />
     <script src='/js/css3-mediaqueries.js' type='text/javascript'></script>
     <script src='http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js' type='text/javascript'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js' type='text/javascript'></script>
+    <script src='https://github.com/thecoffman/tehcodez/raw/master/jquery.tehcodez.js' type='text/javascript'></script>
   </head>
   <body>
     <div class='container'>
@@ -30,7 +32,7 @@
               <div class='footer twelvecol clear'>
                 <div class='fivecol' id='twitter'></div>
                 <div class='twocol'></div>
-                <div class='fivecol' id='github-badge'></div>
+                <div class='fivecol' id='github'></div>
               </div>
             </div>
           </div>
@@ -40,12 +42,10 @@
     </div>
     <script type='text/javascript'>
       //<![CDATA[
-        GITHUB_USERNAME="elcuervo";
-        GITHUB_LIST_LENGTH=10;
-        GITHUB_HEAD="div"; // e.g. change to "h2" for wordpress sidebars
-        GITHUB_THEME="black"; // try 'black'
-        GITHUB_TITLE = "My projects";
-        GITHUB_SHOW_ALL = "Show all";
+        $('#github').tehcodez({
+          username: 'elcuervo',
+          max: 5
+        });
         
         getTwitters('twitter', {
           id: 'elcuervocorax',

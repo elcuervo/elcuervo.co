@@ -8,6 +8,8 @@
     %link{rel: "stylesheet", href: "http://fonts.googleapis.com/css?family=PT Sans", type: "text/css", media: "screen"}
     %script{type: "text/javascript", src: "/js/css3-mediaqueries.js"}
     %script{type: "text/javascript", src: "http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js"}
+    %script{type: "text/javascript", src: "http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"}
+    %script{type: "text/javascript", src: "https://github.com/thecoffman/tehcodez/raw/master/jquery.tehcodez.js"}
   %body
     .container
       .row
@@ -26,16 +28,14 @@
               .footer.twelvecol.clear
                 #twitter.fivecol
                 .twocol
-                #github-badge.fivecol
+                #github.fivecol
         .twocol
 
     :javascript
-      GITHUB_USERNAME="elcuervo";
-      GITHUB_LIST_LENGTH=10;
-      GITHUB_HEAD="div"; // e.g. change to "h2" for wordpress sidebars
-      GITHUB_THEME="black"; // try 'black'
-      GITHUB_TITLE = "My projects";
-      GITHUB_SHOW_ALL = "Show all";
+      $('#github').tehcodez({
+        username: 'elcuervo',
+        max: 5
+      });
 
       getTwitters('twitter', {
         id: 'elcuervocorax',
