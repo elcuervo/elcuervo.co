@@ -1,13 +1,15 @@
 \---
-layout: default
+layout: main
 \---
 
 .posts
   {% for post in site.posts %}
-  .post.sixcol.last
-    /%span {{ post.date | date_to_string }}
+  {% unless post.featured %}
+  .post.row
     %a{href: "{{ post.url }}"}
-      %img{ src: '/images/posts/{{post.url | replace: "/","" | replace: ".html",""}}/thumb.png', alt: "{{ post.title }}" }
-      .title.twelvecol {{ post.title }}
-    /%a{href: "{{ post.url }}"} {{ post.title }}
+      %img{ src: '{{ post.image }}', alt: "{{ post.title }}" }
+    .summary.ninecol.right
+      %h2 {{ post.title }}
+      %p {{ post.summary }}
+  {% endunless %}
   {% endfor %}

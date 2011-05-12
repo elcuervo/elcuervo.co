@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class='row featured'>
+  <div class='elevencol centered no_float'>
+    {% for post in site.posts reversed %}
+    {% if post.featured %}
+    <a href='{{post.url}}'>
+      <img alt='{{ post.title }}' src='{{ post.featured-image }}' />
+    </a>
+    <div class='ninecol right'>
+      <h1>{{ post.title }}</h1>
+      <p>{{ post.summary }}</p>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+<div class='row posts'>
+  <div class='elevencol centered no_float'>
+    {{content}}
+  </div>
+</div>

@@ -1,0 +1,21 @@
+\---
+layout: default
+\---
+
+.row.featured
+  .elevencol.centered.no_float
+    {% for post in site.posts reversed %}
+    {% if post.featured %}
+    %a{href: "{{post.url}}" }
+      %img{ src:"{{ post.featured-image }}", alt: "{{ post.title }}" }
+    .ninecol.right
+      %h1 {{ post.title }}
+      %p {{ post.summary }}
+    {% endif %}
+    {% endfor %}
+
+.row.posts
+  .elevencol.centered.no_float
+    {{content}}
+
+

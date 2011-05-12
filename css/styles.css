@@ -4,35 +4,46 @@
 
 body {
   font-family: 'PT Sans', serif;
+  background: url(/images/stripe.png);
+}
+
+h1{
+  font-size: 3em;
+  padding: 10px
+}
+
+h2{
+  font-size: 2em;
+  padding: 10px
+}
+
+h3{
+  padding: 10px
 }
 
 ul{
   list-style-type: none;
-  margin-right: 50px;
-  height: 100px
+  margin-right: 50px
 }
 
 ul li {
-  float:left;
-  padding: 25px;
-  background: black;
+  float: left;
+  margin-right: 15px;
 }
 
-ul li:hover{
-  background: #222
+p, h1 {
+  padding-bottom: 10px
 }
 
-ul li a{
-  color: white;
-  text-decoration: none
+.content a{
+  color: #808080
 }
+  .content p{
+    padding-top: 10px
+  }
 
 .clear{
   clear:both;
-}
-
-.menu{
-  float:right
 }
 
 .page{
@@ -40,41 +51,80 @@ ul li a{
 }
 
 .wrapper{
-  border:1px solid black
+  border:1px solid black;
+  background: white;
+}
+
+.featured{
+  padding-bottom: 40px
 }
 
 .content{
-  padding-bottom: 20px
-}
-
-.posts{
+  padding-bottom: 20px;
+  color: #000;
 }
 
 .posts .post{
   margin-right:4px;
-  border: 1px solid black;
 }
 
-.posts .post .title{
-  background: black;
-  color: white;
+.posts .post a{
+  text-decoration: none
+  color: #000;
 }
 
 .logo{
   position:absolute;
   margin-top: -20px;
-  margin-left: 50px;
+  margin-left: 30px;
   background: black;
-  padding: 10px 5px;
+  padding: 15px 10px;
+}
+
+.centered{
+  margin: 0 auto
+}
+
+.no_float{
+  float: none
+}
+
+.right{
+  float: right
 }
 
 .footer{
   background: black;
   color: white;
+  padding: 20px
 }
 
 .footer a{
   color: #808080
+}
+
+nav.menu{
+  float: right;
+  height: 20px;
+  margin-top: -10px;
+  margin-bottom: 7px
+}
+
+#post_title{
+  margin-top: -50px;
+  margin-bottom: 50px;
+  margin-right: 30px;
+  background: white;
+  padding: 10px;
+  float: right;
+  z-index: 999;
+  position: relative;
+  line-height: 60px
+}
+
+.who_am_i p{
+  font-size: 0.8em;
+  line-height: 0.5em
 }
 
 /* ============================= */
@@ -85,6 +135,39 @@ ul li a{
 
   body {
 
+  }
+
+  h1{ font-size: 1.5em}
+
+  .page{
+    padding-top: 5px
+  }
+
+  .logo{
+    padding: 7px 5px;
+    margin-top: -5px;
+    margin-left: 10px;
+  }
+
+  .logo img{
+    width: 35px
+  }
+
+  #post_title{
+    padding: 5px
+  }
+
+  ul{
+    margin-right: 10px
+  }
+
+  nav.menu {
+    height: 10px;
+    margin-top: 3px
+  }
+
+  .menu img{
+    width: 20px
   }
 
 }

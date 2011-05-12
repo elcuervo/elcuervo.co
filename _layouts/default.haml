@@ -5,6 +5,7 @@
     %meta{name: "viewport", content: "width=device-width, initial-scale=1.0"}
     %link{rel: "stylesheet", href: "/css/1140.css", type: "text/css", media: "screen"}
     %link{rel: "stylesheet", href: "/css/styles.css", type: "text/css", media: "screen"}
+    %link{rel: "stylesheet", href: "/css/syntax.css", type: "text/css", media: "screen"}
     %link{rel: "stylesheet", href: "http://fonts.googleapis.com/css?family=PT Sans", type: "text/css", media: "screen"}
     %script{type: "text/javascript", src: "/js/css3-mediaqueries.js"}
     %script{type: "text/javascript", src: "http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js"}
@@ -13,28 +14,55 @@
   %body
     .container
       .row
-        .twocol
-        .eightcol
-          .twelvecol.page
-            .logo
-              %a{href: "/"}
-                %img{src:"/images/crow.png"}
-            .twelvecol.wrapper
-              .menu.clear
-                %ul
-                  %li
-                    %a{href: "/rax"} about
-                  %li
-                    %a{href: "/contact"} contact
-              .content.twelvecol
-                .onecol
-                .tencol {{content}}
-                .onecol
-              .footer.twelvecol.clear
-                #twitter.fivecol
-                .twocol
-                #github.fivecol
-        .twocol
+        .page
+          .logo
+            %a{href: "/"}
+              %img{src:"/images/crow.png"}
+          %nav.twelevecol.menu
+            %ul
+              %li
+                %a{href: "https://github.com/elcuervo"}
+                  %img{src: '/images/icons/github_32.png'}
+              %li
+                %a{href: "http://www.flickr.com/photos/el_cuervo"}
+                  %img{src: '/images/icons/flickr_32.png'}
+              %li
+                %a{href: "http://twitter.com/elcuervocorax"}
+                  %img{src: '/images/icons/twitter_32.png'}
+              %li
+                %img{src: '/images/icons/email_32.png'}
+
+      .row.wrapper
+        .row.content
+          {{ content }}
+        .row.footer.last
+          .related
+            {% if site.related_posts %}
+            %h3 Related Posts
+            {% for post in site.related_posts %}
+            {% unless post.id == page.id %}
+            %p
+              %span {{ post.date | date_to_string }}
+              %a{href: "{{ post.url}}"} {{post.title}}
+            {% endunless %}
+            {% endfor %}
+            {% endif %}
+
+          .who_am_i.vcard
+            %h3 Who am I
+            %p.fn.n
+              Hello!, i'm
+              %strong.given-name Bruno
+              %strong.additional-name Aguirre
+              a 25 years old developer from
+              %abbr.country-name Uruguay.
+              I've been coding the last ten years, loving HTTP, REST and edge technologies.
+            %p I spend 5 years working and learning about SMPP, SMSCs and ESMEs.
+            %p 2500 million sms delivered later i returned to the HTTP world seeking for challenges and distributed stuff, which i love :D.
+            %p
+              Currently i'm working at Cubox doing the things i love working with top knotch people.
+
+      .clear
 
     :javascript
         var _gaq = _gaq || [];
@@ -46,17 +74,3 @@
           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
-
-      $('#github').tehcodez({
-        username: 'elcuervo',
-        max: 5
-      });
-
-      getTwitters('twitter', {
-        id: 'elcuervocorax',
-        count: 5,
-        enableLinks: true,
-        ignoreReplies: true,
-        clearContents: true,
-        template: '%text% <a href="http://twitter.com/%user_screen_name%/statuses/%id_str%/">%time%</a>'
-      });

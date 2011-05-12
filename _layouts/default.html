@@ -5,6 +5,7 @@
     <meta content='width=device-width, initial-scale=1.0' name='viewport' />
     <link href='/css/1140.css' media='screen' rel='stylesheet' type='text/css' />
     <link href='/css/styles.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='/css/syntax.css' media='screen' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=PT Sans' media='screen' rel='stylesheet' type='text/css' />
     <script src='/js/css3-mediaqueries.js' type='text/javascript'></script>
     <script src='http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js' type='text/javascript'></script>
@@ -14,40 +15,73 @@
   <body>
     <div class='container'>
       <div class='row'>
-        <div class='twocol'></div>
-        <div class='eightcol'>
-          <div class='twelvecol page'>
-            <div class='logo'>
-              <a href='/'>
-                <img src='/images/crow.png' />
-              </a>
-            </div>
-            <div class='twelvecol wrapper'>
-              <div class='menu clear'>
-                <ul>
-                  <li>
-                    <a href='/rax'>about</a>
-                  </li>
-                  <li>
-                    <a href='/contact'>contact</a>
-                  </li>
-                </ul>
-              </div>
-              <div class='content twelvecol'>
-                <div class='onecol'></div>
-                <div class='tencol'>{{content}}</div>
-                <div class='onecol'></div>
-              </div>
-              <div class='footer twelvecol clear'>
-                <div class='fivecol' id='twitter'></div>
-                <div class='twocol'></div>
-                <div class='fivecol' id='github'></div>
-              </div>
-            </div>
+        <div class='page'>
+          <div class='logo'>
+            <a href='/'>
+              <img src='/images/crow.png' />
+            </a>
+          </div>
+          <nav class='twelevecol menu'>
+            <ul>
+              <li>
+                <a href='https://github.com/elcuervo'>
+                  <img src='/images/icons/github_32.png' />
+                </a>
+              </li>
+              <li>
+                <a href='http://www.flickr.com/photos/el_cuervo'>
+                  <img src='/images/icons/flickr_32.png' />
+                </a>
+              </li>
+              <li>
+                <a href='http://twitter.com/elcuervocorax'>
+                  <img src='/images/icons/twitter_32.png' />
+                </a>
+              </li>
+              <li>
+                <img src='/images/icons/email_32.png' />
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class='row wrapper'>
+        <div class='row content'>
+          {{ content }}
+        </div>
+        <div class='row footer last'>
+          <div class='related'>
+            {% if site.related_posts %}
+            <h3>Related Posts</h3>
+            {% for post in site.related_posts %}
+            {% unless post.id == page.id %}
+            <p>
+              <span>{{ post.date | date_to_string }}</span>
+              <a href='{{ post.url}}'>{{post.title}}</a>
+            </p>
+            {% endunless %}
+            {% endfor %}
+            {% endif %}
+          </div>
+          <div class='who_am_i vcard'>
+            <h3>Who am I</h3>
+            <p class='fn n'>
+              Hello!, i'm
+              <strong class='given-name'>Bruno</strong>
+              <strong class='additional-name'>Aguirre</strong>
+              a 25 years old developer from
+              <abbr class='country-name'>Uruguay.</abbr>
+              I've been coding the last ten years, loving HTTP, REST and edge technologies.
+            </p>
+            <p>I spend 5 years working and learning about SMPP, SMSCs and ESMEs.</p>
+            <p>2500 million sms delivered later i returned to the HTTP world seeking for challenges and distributed stuff, which i love :D.</p>
+            <p>
+              Currently i'm working at Cubox doing the things i love working with top knotch people.
+            </p>
           </div>
         </div>
-        <div class='twocol'></div>
       </div>
+      <div class='clear'></div>
     </div>
     <script type='text/javascript'>
       //<![CDATA[
@@ -60,20 +94,6 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
-        
-        $('#github').tehcodez({
-          username: 'elcuervo',
-          max: 5
-        });
-        
-        getTwitters('twitter', {
-          id: 'elcuervocorax',
-          count: 5,
-          enableLinks: true,
-          ignoreReplies: true,
-          clearContents: true,
-          template: '%text% <a href="http://twitter.com/%user_screen_name%/statuses/%id_str%/">%time%</a>'
-        });
       //]]>
     </script>
   </body>

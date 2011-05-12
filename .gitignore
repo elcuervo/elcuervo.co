@@ -1,4 +1,5 @@
 _site/
 *.swp
+*/**.DS_Store
 pkg/
 test/
