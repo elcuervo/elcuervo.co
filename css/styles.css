@@ -51,7 +51,6 @@ p, h1 {
 }
 
 .wrapper{
-  border:1px solid black;
   background: white;
 }
 
@@ -154,7 +153,9 @@ nav.menu{
   }
 
   #post_title{
-    padding: 5px
+    padding: 5px;
+    margin-top: -30px;
+    line-height: 15px
   }
 
   ul{
@@ -168,6 +169,10 @@ nav.menu{
 
   .menu img{
     width: 20px
+  }
+
+  .who_am_i p{
+    line-height: 15px
   }
 
 }
