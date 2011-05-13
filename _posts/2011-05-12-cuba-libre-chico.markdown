@@ -2,7 +2,7 @@
 layout: post
 title: Cuba Libre chico
 published: true
-categories: [web framework, cuba, sugar, ruby]
+categories: [web-framework, cuba, sugar, ruby]
 image: "/images/posts/cuba-libre-chico/image.jpg"
 featured-image: "/images/posts/cuba-libre-chico/featured-image.jpg"
 summary: I've been wandering in the Ruby world a year now, from Rails to Sinatra. But sometimes i'd really want things simpler and perhaps more clean of developing web applications. Specially when you can get something fast and get total control. Thats when i've found Cuba a great web framework.
