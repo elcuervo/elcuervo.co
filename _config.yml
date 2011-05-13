@@ -4,3 +4,6 @@ lsi: true
 pygments: true
 haml_folder: **/*.haml
 sass_folder: **/*.sass
+url: http://elcuervo.co
+author: elCuervo - Bruno Aguirre
+title: elCuervo
