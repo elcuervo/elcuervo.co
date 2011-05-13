@@ -7,7 +7,7 @@ featured-image: "/images/posts/migration-to-github/featured-github-image.jpg"
 image: "/images/posts/migration-to-github/github-image.jpg"
 categories: [blog, github]
 summary: "My journey starting over a blog in a way i really like. The quirks and things i must do to make this blog what it is today.
-So, after many years having (almost) a blog i've choosed the best way of having one, using the incredible http://pages.github.com.  I started the migration a few days ago and i found that for a developer like me having a git-powered blog is the only way to blog."
+So, after many years having (almost) a blog I've chose the best way of having one, using the incredible http://pages.github.com.  I started the migration a few days ago and i found that for a developer like me having a git-powered blog is the only way to blog."
 
 ---
 {{ page.summary }}
