@@ -3,8 +3,9 @@
 /* ============================== */
 
 body {
-  font-family: 'PT Sans', serif;
+  font-family: 'PT Sans', "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   background: url(/images/stripe.png);
+  line-height: 1.4;
 }
 
 h1{
