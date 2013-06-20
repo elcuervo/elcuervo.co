@@ -1,74 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.0/pure-min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="public/style.css">
+---
+layout: site
+---
 
-    <title>elcuervo's nest</title>
-  </head>
-  <body>
-    <div class="pure-g-r" id="layout">
-      <div class="sidebar pure-u">
-        <header class="header pure-u-1">
-          <hgroup>
-            <img src="public/img/crow.png" alt="elcuervo's nest" />
-          </hgroup>
+<div class="posts pure-g">
 
-          <nav class="nav">
-            <ul class="nav-list">
+  {% for post in site.posts %}
 
-              <li class="nav-item">
-                <a href="https://github.com/elcuervo"> <i class="icon-github"></i> </a>
-              </li>
+  <section class="post pure-u-1">
+    <header class="post-header">
+      <a href="{{ post.url }}" title="Written on {{ post.date | date_to_string }}">
+        <h2 class="post-title pure-u-1"> {{ post.title }} </h2>
+      </a>
+    </header>
+  </section>
 
-              <li class="nav-item">
-                <a href="http://twitter.com/cuerbot"> <i class="icon-twitter"></i> </a>
-              </li>
+  {% endfor %}
 
-            </ul>
-          </nav>
-        </header>
-      </div>
-
-      <div class="content pure-u-1">
-        <!-- A wrapper for all the blog posts -->
-
-        <div class="posts pure-g">
-
-          <section class="post pure-u-1">
-            <header class="post-header">
-              <h2 class="post-title pure-u-1">Everything You Need to Know About Grunt</h2>
-
-              <p class="post-meta pure-u-1">
-                <a class="post-category post-category-js" href="#">JavaScript</a>
-              </p>
-            </header>
-
-            <div class="post-description pure-u-1">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              </p>
-            </div>
-          </section>
-
-        </div>
-
-        <footer class="footer">
-          <div class="pure-menu pure-menu-horizontal pure-menu-open">
-            <ul>
-            </ul>
-          </div>
-        </footer>
-      </div>
-    </div>
-
-  </body>
-</html>
+</div>
