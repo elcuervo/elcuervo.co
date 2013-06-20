@@ -2,10 +2,12 @@
 layout: post
 title: EuRuKo - The aftermath
 categories: [conference, euruko]
-assets: euruko-the-aftermath
 published: true
 
 ---
+
+![](/posts_assets/euruko2012-header.png)
+
 I had the great honour to go to EuRuKo one more time this time I was a
 speaker. It was an amazing experience, last year as a attendant and now being
 able to share my knowledge to all the people that year by year travel through

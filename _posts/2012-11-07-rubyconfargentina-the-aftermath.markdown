@@ -37,4 +37,4 @@ and try to be there next time.
 
 ## Video
 
-![soon](http://i2.kym-cdn.com/photos/images/newsfeed/000/117/012/tumblr_lj57goZvBh1qdjdp1o1_500.jpg)
+<iframe src="http://player.vimeo.com/video/62761352" width="500" height="282" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>

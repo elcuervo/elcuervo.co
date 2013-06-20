@@ -2,11 +2,10 @@
 layout: post
 title: Gerbil, TDD for the rest of us
 published: true
-assets: gerbil-tdd-for-the-rest-of-us
 categories: [tdd, js]
 hashtags: gerbil, tdd, js
-tags: [cubox, tdd]
 ---
+![Gerbil](/posts_assets/gerbil-header.png)
 
 Gerbil is my attempt to use a really simple (for real) tdd framework
 in js, both browser and node.js.
@@ -81,15 +80,15 @@ scenario("This is my scenario", {
 
 As i said node.js is supported so the output will look like this:
 
-![Console Output](/images/posts/gerbil-tdd-for-the-rest-of-us/console-output.png)
-![Console Output](/images/posts/gerbil-tdd-for-the-rest-of-us/error-output.png)
+![Console Output](/posts_assets/gerbil-console-output.png)
+![Console Output](/posts_assets/gerbil-error-output.png)
 
 ### Browser
 
 On the other hand if you ran it within a browser by default the output will be
 like this:
 
-![Browser Output](/images/posts/gerbil-tdd-for-the-rest-of-us/browser-output.png)
+![Browser Output](/posts_assets/gerbil-browser-output.png)
 
 ### Custom
 
@@ -113,4 +112,4 @@ scenario("Fancy scenario", {
 }, my_cool_logger);
 {% endhighlight %}
 
-![Custom Logger](/images/posts/gerbil-tdd-for-the-rest-of-us/custom-logger.png)
+![Custom Logger](/posts_assets/gerbil-custom-logger.png)

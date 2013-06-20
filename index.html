@@ -6,11 +6,12 @@ layout: site
 
   {% for post in site.posts %}
 
-  <section class="post pure-u-1">
-    <header class="post-header">
+  <section class="pure-u-1">
+    <header class="post-list-header">
       <a href="{{ post.url }}" title="Written on {{ post.date | date_to_string }}">
         <h2 class="post-title pure-u-1"> {{ post.title }} </h2>
       </a>
+      <time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
     </header>
   </section>
 

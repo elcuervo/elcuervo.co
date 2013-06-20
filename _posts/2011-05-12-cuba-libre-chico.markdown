@@ -7,6 +7,7 @@ hashtags: cuba, ruby
 assets: cuba-libre-chico
 
 ---
+![RATS](/posts_assets/cuba-header.png)
 
 I've been wandering in the Ruby world a year now, from Rails to Sinatra. But sometimes i'd really want things simpler and perhaps more clean of developing web applications. Specially when you can get something fast and get total control. Thats when i've found Cuba a great web framework.
 
@@ -15,7 +16,7 @@ Cuba inherits all its power from [Rack](https://github.com/chneukirchen/rack) an
 Being refactored some time ago now looks a lot like [Sinatra](https://github.com/sinatra/sinatra) routes, here's an example
 
 
-{% highlight ruby %}
+{% highlight ruby lineos %}
 require 'cuba'
 
 Cuba.define do
@@ -62,7 +63,7 @@ end
 
 I liked Cuba so much i started a little lib to include all the contrib of Cuba, and i called it [cuba-sugar](https://github.com/elcuervo/cuba-sugar)
 
-![Cuba Sugar](/images/posts/cuba-libre-chico/cuba-sugar.jpeg)
+![Cuba Sugar](/posts_assets/cuba-sugar.jpeg)
 
 Which adds some things not so much, just to make writing a little easier following the way Cuba is doing stuff right now.
 
