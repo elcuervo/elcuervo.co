@@ -11,7 +11,7 @@ layout: site
       <a href="{{ post.url }}" title="Written on {{ post.date | date_to_string }}">
         <h2 class="post-title pure-u-1"> {{ post.title }} </h2>
       </a>
-      <time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
+      <time class="post-time" datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
     </header>
   </section>
 
