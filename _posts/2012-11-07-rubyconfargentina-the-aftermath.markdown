@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RubyConf Argentina - The aftermath
+title: RubyConf Argentina 2012 - The aftermath
 assets: rubyconfar-the-aftermath
 published: true
 

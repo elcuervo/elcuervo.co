@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EuRuKo - The aftermath
+title: EuRuKo 2012 - The aftermath
 categories: [conference, euruko]
 published: true
 
