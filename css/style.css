@@ -95,13 +95,16 @@ a:focus {
 
 .post-list-header {
   position: relative;
+  font-family: 'Viga', sans-serif;
 }
 
 .post-title {
   font-size: 2em;
   color: #222;
   margin-bottom: 0.2em;
+  font-family: 'Viga', sans-serif;
 }
+
 .post-avatar {
   border-radius: 50px;
   float: right;
@@ -110,6 +113,7 @@ a:focus {
 .post-description {
   color: #444;
   line-height: 1.8em;
+  font-family: 'Orienta', sans-serif;
 }
 .post-meta {
   color: #999;
