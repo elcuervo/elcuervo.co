@@ -21,7 +21,7 @@ work first?
 
 ![](/posts_assets/poll_results.png)
 
-To my surpruse this was the top 3:
+To my surprise this was the top 3:
 
 * [Minuteman](https://github.com/elcuervo/minuteman)
 * [Airplay](https://github.com/elcuervo/airplay)
