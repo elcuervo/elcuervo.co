@@ -10,10 +10,10 @@ After a long time about a month ago I resumed my work on airplay, my ruby gem to
 interact with the Apple TV (and some others now).
 
 Working on an open source project for more than 2 years is hard but doing so in
-a project that relies on reverse engeneering a closed protocol is a PITA.
+a project that relies on reverse engineering a closed protocol is a PITA.
 
 But here's the thing: I really love working on the airplay gem but I ran out of
-energy some months ago because I couln't find a solution for the issues I was
+energy some months ago because I couldn't find a solution for the issues I was
 having. And I basically quit... issues pile up and I was attempting a rewrite
 without much luck.
 
@@ -41,10 +41,10 @@ RubyGems, it's about the people.
 I need to thank the great developers, the ones that stayed awake for nights just
 to find a bug, I need to do it more.
 For that exact reason I built [Hugware](http://hugware.org) some time ago since
-most developers will be extremelly happy with just a thank you.
+most developers will be extremely happy with just a thank you.
 
 [Airplay](https://github.com/elcuervo/airplay) is what is is now thanks to the
-people around the project. I cheer today for the people that belived in me even
+people around the project. I cheer today for the people that believed in me even
 when I was not that sure.
 
 There's a lot of future for the gem, for the CLI and for a bunch of spinoffs of
